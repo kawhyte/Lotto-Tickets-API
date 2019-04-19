@@ -1,8 +1,10 @@
 const Joi = require('joi');
 const express = require('express');
 const app = express();
+//const bodyParser = require('body-parser')
 
 app.use(express.json());
+//app.use(bodyParser.json())
 
 
 app.get('/', (req, res) => {
@@ -25,21 +27,25 @@ app.get('/api/tickets/:id', (req, res) => {
 
 app.post('/api/tickets', (req, res) => {
 
-    const schema = {
-        name: Joi.string().min(3).required()
-    };
-    const result = Joi.validate(req.body, schema)
+    //const schema = {
+        //gameName: Joi.string().min(5).required()
+        //name: Joi.string().min(5)
 
-    if (result.error) {
-        return res.status(400).send(result.error.details[0].message);
-    }
+    //};
+    //const result = Joi.validate(req.body, schema);
+    //console.log(result);
+    //console.log(req.body.name);
+
+    //if (result.error) {
+    //    return res.status(400).send(result.error.details[0].message);
+    //}
 
 
     const ticket = {
         id: tickets.length + 1,
         name: req.body.name
     };
-
+console.log(ticket);
     tickets.push(ticket);
     res.send(ticket);
 
