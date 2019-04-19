@@ -1,10 +1,14 @@
 const Joi = require('joi');
 const express = require('express');
+//const app = express();
+var bodyParser = require('body-parser');
 const app = express();
-//const bodyParser = require('body-parser')
 
-app.use(express.json());
-//app.use(bodyParser.json())
+//app.use(express.json());
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: true }));
+// parse application/json
+app.use(bodyParser.json());
 
 
 app.get('/', (req, res) => {
@@ -27,29 +31,32 @@ app.get('/api/tickets/:id', (req, res) => {
 
 app.post('/api/tickets', (req, res) => {
 
-    //const schema = {
-        //gameName: Joi.string().min(5).required()
+    const schema = {
+        gameName: Joi.string().min(5).required()
         //name: Joi.string().min(5)
 
-    //};
-    //const result = Joi.validate(req.body, schema);
+    };
+    const result = Joi.validate(req.body, schema);
     //console.log(result);
     //console.log(req.body.name);
 
-    //if (result.error) {
-    //    return res.status(400).send(result.error.details[0].message);
-    //}
+    if (result.error) {
+        return res.status(400).send(result.error.details[0].message);
+    }
 
+    console.log('body: ', req.body)
+  //console.log('query: ', req.query)
+console.log(req.body.gameName)
 
     const ticket = {
         id: tickets.length + 1,
-        name: req.body.name
+        gameName: req.body.gameName
     };
-console.log(ticket);
+//console.log(ticket);
     tickets.push(ticket);
     res.send(ticket);
 
-})
+});
 
 app.put('/api/tickets/:id', (req, res) => {
     const ticket = tickets.find(c => c.id === parseInt(req.params.id))
@@ -111,7 +118,7 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`listening on port ${port}`))
 
 const tickets = [{
-        id: 1,
+        "id": 1,
         "gameNumber": "7017",
         "gameName": "PAC-MAN",
         "topPrize": "$250,000.00",
@@ -119,7 +126,7 @@ const tickets = [{
         "ticketCost": "$5.00"
     },
     {
-        id: 2,
+        "id": 2,
         "gameNumber": "5014",
         "gameName": "JOKER'S WILD",
         "topPrize": "$30,000.00",
@@ -127,13 +134,14 @@ const tickets = [{
         "ticketCost": "$2.00"
     },
     {
-        id: 3,
+        "id": 3,
         "gameNumber": "5013",
         "gameName": "POWER 5S",
         "topPrize": "$250,000.00",
         "topPrizeRemaining": "3 of 10",
         "ticketCost": "$5.00"
     }, {
+        "id": 3,
         "gameNumber": "5012",
         "gameName": "WHEEL OF FORTUNE",
         "topPrize": "$2,000,000.00",

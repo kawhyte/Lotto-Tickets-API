@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "joi": "^13.1.0"
+    "joi": "^13.7.0"
   }
 }
