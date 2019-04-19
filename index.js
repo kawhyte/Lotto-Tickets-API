@@ -4,16 +4,17 @@ const express = require('express');
 var bodyParser = require('body-parser');
 const app = express();
 
-//app.use(express.json());
-// parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 // parse application/json
 app.use(bodyParser.json());
 
 
 app.get('/', (req, res) => {
     res.send('Hello World');
-    
+
 });
 
 app.get('/api/tickets', (req, res) => {
@@ -33,26 +34,23 @@ app.post('/api/tickets', (req, res) => {
 
     const schema = {
         gameName: Joi.string().min(5).required()
-        //name: Joi.string().min(5)
 
     };
     const result = Joi.validate(req.body, schema);
-    //console.log(result);
-    //console.log(req.body.name);
 
     if (result.error) {
         return res.status(400).send(result.error.details[0].message);
     }
 
     console.log('body: ', req.body)
-  //console.log('query: ', req.query)
-console.log(req.body.gameName)
+   
+    console.log(req.body.gameName)
 
     const ticket = {
         id: tickets.length + 1,
         gameName: req.body.gameName
     };
-//console.log(ticket);
+   
     tickets.push(ticket);
     res.send(ticket);
 
