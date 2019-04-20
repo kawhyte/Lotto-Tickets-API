@@ -25,26 +25,18 @@ app.get('/api/tickets/:id', (req, res) => {
     const ticket = tickets.find(c => c.id === parseInt(req.params.id))
     //res.send(req.params.id)
     if (!ticket)
-        res.status(404).send(`The ticket with id:${req.params.id} was not found.`)
+       return res.status(404).send(`The ticket with id:${req.params.id} was not found.`)
 
     res.send(ticket);
 });
 
 app.post('/api/tickets', (req, res) => {
 
-    const schema = {
-        gameName: Joi.string().min(5).required()
-
-    };
-    const result = Joi.validate(req.body, schema);
+    const result = ValidateTicket(req.body);
 
     if (result.error) {
         return res.status(400).send(result.error.details[0].message);
     }
-
-    console.log('body: ', req.body)
-   
-    console.log(req.body.gameName)
 
     const ticket = {
         id: tickets.length + 1,
@@ -58,24 +50,19 @@ app.post('/api/tickets', (req, res) => {
 
 app.put('/api/tickets/:id', (req, res) => {
     const ticket = tickets.find(c => c.id === parseInt(req.params.id))
-    //res.send(req.params.id)
+
     if (!ticket) {
         res.status(404).send(`The ticket with id:${req.params.id} was not found.`)
         return;
     }
 
-
-    const schema = {
-        name: Joi.string().min(3).required()
-    };
-    const result = Joi.validate(req.body, schema)
+    const result = ValidateTicket(req.body);
 
     if (result.error) {
         res.status(400).send(result.error.details[0].message);
-
     }
 
-    ticket.name = req.body.name
+    ticket.gameName = req.body.gameName
     res.send(ticket);
 
 });
@@ -84,7 +71,7 @@ app.put('/api/tickets/:id', (req, res) => {
 
 app.delete('/api/tickets/:id', (req, res) => {
     const ticket = tickets.find(c => c.id === parseInt(req.params.id))
-    //res.send(req.params.id)
+    
     if (!ticket)
         return res.status(404).send(`The ticket with id:${req.params.id} was not found.`)
 
@@ -92,24 +79,15 @@ app.delete('/api/tickets/:id', (req, res) => {
     tickets.splice(index, 1);
     res.send(ticket);
 
-
-
-
-    // const schema = {
-    //     name: Joi.string().min(3).required()
-    // };
-    // const result = Joi.validate(req.body, schema)
-
-    // if (result.error){
-    //     res.status(400).send(result.error.details[0].message);
-    // }
-
-    // ticket.name = req.body.name
-    // res.send(ticket);
-
 });
 
+ function ValidateTicket(ticket){
 
+    const schema = {
+         gameName: Joi.string().min(3).required()
+     };
+     return result = Joi.validate(ticket, schema)
+ }
 
 const port = process.env.PORT || 3000;
 
