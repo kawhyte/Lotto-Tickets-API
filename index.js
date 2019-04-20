@@ -1,17 +1,19 @@
+const morgan = require ('morgan');
+const helmet = require('helmet');
 const Joi = require('joi');
 const express = require('express');
-//const app = express();
 var bodyParser = require('body-parser');
 const app = express();
-
 
 app.use(bodyParser.urlencoded({
     extended: true
 }));
 // parse application/json
 app.use(bodyParser.json());
+app.use(helmet());
+app.use(morgan('tiny'));
 
-
+//END POINTS
 app.get('/', (req, res) => {
     res.send('Hello World');
 

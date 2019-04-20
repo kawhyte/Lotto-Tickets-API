@@ -12,6 +12,8 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "joi": "^13.7.0"
+    "helmet": "^3.16.0",
+    "joi": "^13.7.0",
+    "morgan": "^1.9.1"
   }
 }
