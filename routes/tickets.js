@@ -43,7 +43,7 @@ const Ticket = mongoose.model('Ticket',ticketSchema);
 
 // END POINTS
 router.get('/', async (req, res) => {
-    const tickets = await Ticket.find().sort(ticketName);
+    const tickets = await Ticket.find();//.sort(ticketName);
     res.send(tickets);
 })
 
@@ -60,11 +60,11 @@ router.get('/:id', async (req, res) => {
 
 router.post('/', async (req, res) => {
 
-    //const result = ValidateTicket(req.body);
+    const result = ValidateTicket(req.body);
 
-   // if (result.error) {
-    //   return res.status(400).send(result.error.details[0].message);
-   // }
+    if (result.error) {
+       return res.status(400).send(result.error.details[0].message);
+    }
 
     let ticket =  new Ticket({
         ticketNumber: req.body.ticketNumber,
@@ -107,7 +107,7 @@ router.put('/:id', async (req, res) => {
 });
 
 
-router.delete('/api/tickets/:id', async (req, res) => {
+router.delete('/:id', async (req, res) => {
 
     const ticket = await Ticket.findByIdAndRemove(req.params.id);
 
@@ -120,7 +120,7 @@ router.delete('/api/tickets/:id', async (req, res) => {
 function ValidateTicket(ticket) {
 
     const schema = {
-        ticketNumber: Joi.string().min(1),
+        ticketNumber: Joi.string().min(1).required(),
         ticketName: Joi.string().min(3).required(), 
         topPrize: Joi.string().min(1).required(),
         topPrizeRemaining: Joi.string().min(1).required(),
