@@ -89,7 +89,7 @@ router.put('/:id', async (req, res) => {
     }
 
     const ticket = await Ticket.findByIdAndUpdate(req.params.id,{
-        ticketNumber: req.body.ticketId,
+        ticketNumber: req.body.ticketNumber,
         ticketName: req.body.ticketName,
         topPrize: req.body.topPrize,
         topPrizeRemaining: req.body.topPrizeRemaining,
@@ -124,7 +124,7 @@ function ValidateTicket(ticket) {
         ticketName: Joi.string().min(3).required(), 
         topPrize: Joi.string().min(1).required(),
         topPrizeRemaining: Joi.string().min(1).required(),
-        ticketCost: Joi.string().min(1) 
+        ticketCost: Joi.string().min(1).required() 
     };
     return result = Joi.validate(ticket, schema)
 }
