@@ -1,3 +1,4 @@
+const config = require('config');
 const morgan = require ('morgan');
 const helmet = require('helmet');
 const Joi = require('joi');
@@ -11,7 +12,16 @@ app.use(bodyParser.urlencoded({
 // parse application/json
 app.use(bodyParser.json());
 app.use(helmet());
-app.use(morgan('tiny'));
+
+console.log(`App name: ${config.get('name')}`);
+console.log(`Server name: ${config.get('mail.host')}`);
+console.log(`Server password: ${config.get('mail.password')}`);
+
+if (app.get('env') === 'development'){
+    app.use(morgan('combined'));
+    console.log("Morgan logging enabled");
+}
+
 
 //END POINTS
 app.get('/', (req, res) => {
