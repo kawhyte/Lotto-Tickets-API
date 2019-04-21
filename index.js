@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const config = require('config');
 const morgan = require ('morgan');
 const helmet = require('helmet');
@@ -17,6 +18,10 @@ app.use(bodyParser.json());
 app.use(helmet());
 app.use('/api/tickets', tickets);
 app.use('/', home);
+
+mongoose.connect('mongodb://localhost/lotto')
+.then(() => console.log('Connected to DB'))
+.catch(err => console.log('error connecting to DB'));
 
 console.log(`App name: ${config.get('name')}`);
 console.log(`Server name: ${config.get('mail.host')}`);
