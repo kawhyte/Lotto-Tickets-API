@@ -1,5 +1,3 @@
 {
-    "mail":{
-        "password": "lotto_password"
-    }
-}
+    "jwtPrivateKey":"Lotto_jwtPrivateKey"
+ }

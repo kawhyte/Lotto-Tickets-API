@@ -5,6 +5,7 @@ const helmet = require('helmet');
 const tickets = require('./routes/tickets');
 const home = require('./routes/home');
 const users  =  require('./routes/users');
+const auth = require('./routes/auth')
 const express = require('express');
 var bodyParser = require('body-parser');
 const app = express();
@@ -18,7 +19,15 @@ app.use(bodyParser.json());
 app.use(helmet());
 app.use('/api/tickets', tickets);
 app.use('/api/users',users);
+app.use('/api/auth',auth);
 app.use('/', home);
+
+
+
+if(!config.get('jwtPrivateKey')){
+    console.error('Fatal jwtPrivateKey Error');
+    process.exit(1);
+}
 
 mongoose.connect('mongodb://localhost/lotto')
 .then(() => console.log('Connected to DB'))
