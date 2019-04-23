@@ -4,6 +4,7 @@ const morgan = require ('morgan');
 const helmet = require('helmet');
 const tickets = require('./routes/tickets');
 const home = require('./routes/home');
+const users  =  require('./routes/users');
 const express = require('express');
 var bodyParser = require('body-parser');
 const app = express();
@@ -16,6 +17,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 app.use(helmet());
 app.use('/api/tickets', tickets);
+app.use('/api/users',users);
 app.use('/', home);
 
 mongoose.connect('mongodb://localhost/lotto')
