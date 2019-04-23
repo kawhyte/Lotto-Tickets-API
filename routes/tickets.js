@@ -1,45 +1,9 @@
+
+const {Ticket,validateTicket} = require('../models/tickets')
 const Joi = require('joi');
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
-
-
-const ticketSchema = new mongoose.Schema({
-    ticketNumber: {
-        type: String,
-        required: true,
-        minlength: 1
-
-    },
-    ticketName: {
-        type: String,
-        required: true,
-        minlength: 1,
-        maxlength: 50
-    },
-    topPrize: {
-        type: String,
-        required: true,
-        minlength: 1,
-        maxlength: 15
-    },
-
-    topPrizeRemaining: {
-        type: String,
-        required: true,
-        minlength: 1,
-        maxlength: 15
-    },
-    ticketCost: {
-        type: String,
-        required: true,
-        minlength: 1,
-        maxlength: 15
-    }
-
-});
-
-const Ticket = mongoose.model('Ticket',ticketSchema);
 
 // END POINTS
 router.get('/', async (req, res) => {
@@ -50,8 +14,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
 
     ticket = await Ticket.findById(req.params.id)
-    //const ticket = tickets.find(c => c.id === parseInt(req.params.id))
-    //res.send(req.params.id)
+
     if (!ticket)
         return res.status(404).send(`The ticket with id:${req.params.id} was not found.`)
 
@@ -60,7 +23,7 @@ router.get('/:id', async (req, res) => {
 
 router.post('/', async (req, res) => {
 
-    const result = ValidateTicket(req.body);
+    const result = validateTicket(req.body);
 
     if (result.error) {
        return res.status(400).send(result.error.details[0].message);
@@ -82,7 +45,7 @@ router.post('/', async (req, res) => {
 
 router.put('/:id', async (req, res) => {
 
-    const result = ValidateTicket(req.body);
+    const result = validateTicket(req.body);
 
     if (result.error) {
         return res.status(400).send(result.error.details[0].message);
@@ -103,9 +66,7 @@ router.put('/:id', async (req, res) => {
     }
 
     res.send(ticket);
-
 });
-
 
 router.delete('/:id', async (req, res) => {
 
@@ -116,17 +77,5 @@ router.delete('/:id', async (req, res) => {
 
     res.send(ticket);
 });
-
-function ValidateTicket(ticket) {
-
-    const schema = {
-        ticketNumber: Joi.string().min(1).required(),
-        ticketName: Joi.string().min(3).required(), 
-        topPrize: Joi.string().min(1).required(),
-        topPrizeRemaining: Joi.string().min(1).required(),
-        ticketCost: Joi.string().min(1).required() 
-    };
-    return result = Joi.validate(ticket, schema)
-}
 
 module.exports = router;
