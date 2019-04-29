@@ -5,12 +5,14 @@ const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 
-// END POINTS
+// TICKET END POINTS
+//Get all Tickets
 router.get('/', async (req, res) => {
     const tickets = await Ticket.find();//.sort(ticketName);
     res.send(tickets);
 })
 
+//Get ticket with id
 router.get('/:id', async (req, res) => {
 
     ticket = await Ticket.findById(req.params.id)
@@ -21,6 +23,7 @@ router.get('/:id', async (req, res) => {
     res.send(ticket);
 });
 
+// Create a new ticket
 router.post('/', async (req, res) => {
 
     const result = validateTicket(req.body);
@@ -43,6 +46,7 @@ router.post('/', async (req, res) => {
 
 });
 
+//Update a ticket via ID
 router.put('/:id', async (req, res) => {
 
     const result = validateTicket(req.body);
@@ -68,6 +72,7 @@ router.put('/:id', async (req, res) => {
     res.send(ticket);
 });
 
+//Delete ticket via Id 
 router.delete('/:id', async (req, res) => {
 
     const ticket = await Ticket.findByIdAndRemove(req.params.id);

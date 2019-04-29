@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 
+// CREATE NEW USER END POINT
 router.post('/', async (req, res) => {
     const {error} = validate(req.body);
 
