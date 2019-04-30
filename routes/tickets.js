@@ -1,4 +1,5 @@
 
+const auth  = require('../middleware/auth');
 const {Ticket,validateTicket} = require('../models/tickets')
 const Joi = require('joi');
 const mongoose = require('mongoose');
@@ -24,7 +25,7 @@ router.get('/:id', async (req, res) => {
 });
 
 // Create a new ticket
-router.post('/', async (req, res) => {
+router.post('/',auth, async (req, res) => {
 
     const result = validateTicket(req.body);
 
@@ -47,7 +48,7 @@ router.post('/', async (req, res) => {
 });
 
 //Update a ticket via ID
-router.put('/:id', async (req, res) => {
+router.put('/:id',auth, async (req, res) => {
 
     const result = validateTicket(req.body);
 
@@ -73,7 +74,7 @@ router.put('/:id', async (req, res) => {
 });
 
 //Delete ticket via Id 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id',auth, async (req, res) => {
 
     const ticket = await Ticket.findByIdAndRemove(req.params.id);
 
