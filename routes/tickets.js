@@ -25,7 +25,7 @@ router.get('/:id', async (req, res) => {
 });
 
 // Create a new ticket
-router.post('/',auth, async (req, res) => {
+router.post('/', auth, async (req, res) => {
 
     const result = validateTicket(req.body);
 

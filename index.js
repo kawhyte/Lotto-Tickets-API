@@ -20,7 +20,9 @@ app.use(helmet());
 app.use('/api/tickets', tickets);
 app.use('/api/users',users);
 app.use('/api/auth',auth);
+//app.use('./middleware/auth',auth);
 app.use('/', home);
+
 
 
 

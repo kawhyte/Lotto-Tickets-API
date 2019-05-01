@@ -1,3 +1,4 @@
+const auth = require('../middleware/auth');
 const config = require ('config');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
@@ -6,6 +7,17 @@ const {User,validate} = require('../models/user');
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
+
+
+//GET CURRENT USER INFO
+// router.get('/:id', async (req, res) was not used for security reason
+//I will access via web token instead.
+
+router.get('/me', auth,  async (req, res) => {
+// req.user._id comes from the web token
+const user = await User.findById(req.user._id).select('-password') //exclude password
+res.send(user);
+});
 
 // CREATE NEW USER END POINT
 router.post('/', async (req, res) => {
