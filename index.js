@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+require('express-async-errors');
+const error = require('./middleware/error');
 const config = require('config');
 const morgan = require ('morgan');
 const helmet = require('helmet');
@@ -20,10 +22,8 @@ app.use(helmet());
 app.use('/api/tickets', tickets);
 app.use('/api/users',users);
 app.use('/api/auth',auth);
-//app.use('./middleware/auth',auth);
 app.use('/', home);
-
-
+app.use(error);
 
 
 if(!config.get('jwtPrivateKey')){
