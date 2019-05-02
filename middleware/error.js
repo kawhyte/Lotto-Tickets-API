@@ -1,9 +1,10 @@
 const winston  = require('winston');
 
+//Error Middleware for Express only. This wil not work for other errors. 
 module.exports = function(err,req,res,next){
     winston.error(err.message,err);
     
-    res.status(500).send('Ooops! Something went wrong.Again.');
+    res.status(500).send('Ooops! Something went wrong.');
 }
 
 // from most important to least important.
