@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 require('express-async-errors');
 const winston  = require('winston');
+require('winston-mongodb');
 const error = require('./middleware/error');
 const config = require('config');
 const morgan = require ('morgan');
@@ -13,6 +14,7 @@ const express = require('express');
 var bodyParser = require('body-parser');
 const app = express();
 winston.add(winston.transports.File,{filename: 'logfile.log'});
+winston.add(winston.transports.MongoDB,{db:'mongodb://localhost/lotto'});
 
 app.use(bodyParser.urlencoded({
     extended: true
