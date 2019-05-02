@@ -14,14 +14,9 @@ const router = express.Router();
 // TICKET END POINTS
 //Get all Tickets
 router.get('/', async (req, res, next) => {
-
-    try {
+    throw new Error('This is my test error for the get route');
         const tickets = await Ticket.find(); //.sort(ticketName);
         res.send(tickets);
-    } catch (error) {
-        next(error);
-    }
-
 })
 
 //Get ticket with id

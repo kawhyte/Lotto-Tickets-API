@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 require('express-async-errors');
+const winston  = require('winston');
 const error = require('./middleware/error');
 const config = require('config');
 const morgan = require ('morgan');
@@ -11,6 +12,7 @@ const auth = require('./routes/auth')
 const express = require('express');
 var bodyParser = require('body-parser');
 const app = express();
+winston.add(winston.transports.File,{filename: 'logfile.log'});
 
 app.use(bodyParser.urlencoded({
     extended: true
