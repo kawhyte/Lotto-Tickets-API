@@ -13,6 +13,10 @@ const auth = require('./routes/auth')
 const express = require('express');
 var bodyParser = require('body-parser');
 const app = express();
+
+winston.handleExceptions(new winston.transports.File({filename: 'logfileExecptions.log'}));
+process.on('unhandledRejection', (ex)=>{ throw ex;
+})
 winston.add(winston.transports.File,{filename: 'logfile.log'});
 winston.add(winston.transports.MongoDB,{db:'mongodb://localhost/lotto'});
 
