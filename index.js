@@ -8,6 +8,7 @@ require('./startup/logging'); // this has to be added first for logging
 require('./startup/routes')(app);
 require('./startup/db')();
 require('./startup/config')();
+require('./startup/prod')(app);
 
 console.log("Your current environment is: " + app.get('env'))
 // if (app.get('env') === 'development'){
