@@ -1,3 +1,9 @@
+if(process.env.NODE_ENV !== 'production'){
+
+    require('dotenv').load();
+} 
+
+
 const winston = require('winston');
 require('winston-mongodb');
 require('express-async-errors');
@@ -18,7 +24,6 @@ console.log("Your current environment is: " + app.get('env'))
 //     console.log("Morgan logging enabled");
 // }
 
-//throw new Error('index error');
 
 
 winston.handleExceptions(
