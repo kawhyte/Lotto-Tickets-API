@@ -1,3 +1,4 @@
 {
-    "jwtPrivateKey":"Lotto_jwtPrivateKey"
+    "jwtPrivateKey":"Lotto_jwtPrivateKey",
+    "db":"Lotto_db"
  }
