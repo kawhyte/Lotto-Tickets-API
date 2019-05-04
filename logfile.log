@@ -58,3 +58,5 @@
 {"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-04T01:41:42.983Z"}
 {"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-04T01:41:46.330Z"}
 {"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-04T01:41:46.399Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-04T01:43:24.530Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-04T01:43:24.588Z"}
