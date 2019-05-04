@@ -4,4 +4,5 @@ const mongoose = require('mongoose');
 module.exports = function () {
     mongoose.connect('mongodb://localhost/lotto')
         .then(() => winston.info('Connected to MongoDB'))
+        .catch(console.log("Error"))
 }

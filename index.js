@@ -1,4 +1,6 @@
 const winston = require('winston');
+require('winston-mongodb');
+require('express-async-errors');
 const morgan = require('morgan');
 const helmet = require('helmet');
 const express = require('express');
@@ -15,6 +17,30 @@ console.log("Your current environment is: " + app.get('env'))
 //     app.use(morgan('combined'));
 //     console.log("Morgan logging enabled");
 // }
+
+//throw new Error('index error');
+
+
+winston.handleExceptions(
+    new winston.transports.Console({
+        colorize: true,
+        prettyPrint: true
+    }),
+    new winston.transports.File({
+        filename: 'logUncaughtExecptions.log'
+    }));
+process.on('unhandledRejection', (ex) => {
+    throw ex;
+})
+winston.add(winston.transports.File, {
+    filename: 'logfile.log'
+});
+winston.add(winston.transports.MongoDB, {
+    db: 'mongodb://localhost/lotto'
+});
+
+
+
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => winston.info(`The App is listening on port ${port} and awaiting your command, Kenny`))

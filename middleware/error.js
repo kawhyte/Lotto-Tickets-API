@@ -1,6 +1,6 @@
 const winston  = require('winston');
 
-//Error Middleware for Express only. This wil not work for other errors. 
+//Error Middleware for Express only. This will not work for other errors. 
 module.exports = function(err,req,res,next){
     winston.error(err.message,err);
     
