@@ -1,9 +1,6 @@
 if(process.env.NODE_ENV !== 'production'){
-
     require('dotenv').load();
 } 
-
-
 const winston = require('winston');
 require('winston-mongodb');
 require('express-async-errors');
@@ -11,6 +8,10 @@ const morgan = require('morgan');
 const helmet = require('helmet');
 const express = require('express');
 const app = express();
+const swaggerUi = require ('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
+
+app.use('/api-docs',swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 require('./startup/logging'); // this has to be added first for logging 
 require('./startup/routes')(app);

@@ -1,0 +1,173 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.1",
+      "title": "Lotto Scratch-off API",
+      "description": "A Lotto Scratch-off API",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "host": "localhost:3000",
+    "basePath": "/api/",
+    "tags": [
+      {
+        "name": "Lotto Scrach-off",
+        "description": "API for Lotto Scrach-off"
+      }
+    ],
+
+    "schemes": [
+        "http",
+        "https"
+      ],
+      "consumes": [
+        "application/json"
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "paths": {
+        "/tickets": {
+          "post": {
+            "tags": [
+              "Tickets"
+            ],
+            "description": "Add a new ticket to the system",
+            "parameters": [
+              {
+                "name": "ticket",
+                "in": "body",
+                "description": "Ticket that we want to create",
+                "schema": {
+                  "$ref": "#/definitions/Ticket"
+                }
+              }
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "responses": {
+              "200": {
+                "description": "New ticket is created",
+                "schema": {
+                  "$ref": "#/definitions/Ticket"
+                }
+              }
+            }
+          },
+          "get": {
+            "tags": [
+              "Tickets"
+            ],
+            "summary": "Get all tickets in system",
+            "responses": {
+              "200": {
+                "description": "OK",
+                "schema": {
+                  "$ref": "#/definitions/Tickets"
+                }
+              }
+            }
+          }
+        },
+        "/tickets/{ticketId}": {
+          "parameters": [
+            {
+              "name": "ticketId",
+              "in": "path",
+              "required": true,
+              "description": "ID of ticket that we want to find",
+              "type": "string"
+            }
+          ],
+          "get": {
+            "tags": [
+              "Tickets"
+            ],
+            "summary": "Get ticket with given ID",
+            "responses": {
+              "200": {
+                "description": "Ticket found",
+                "schema": {
+                  "$ref": "#/definitions/Ticket"
+                }
+              }
+            }
+          },
+          "delete": {
+            "summary": "Delete ticket with given ID",
+            "tags": [
+              "Tickets"
+            ],
+            "responses": {
+              "200": {
+                "description": "Ticket deleted",
+                "schema": {
+                  "$ref": "#/definitions/Ticket"
+                }
+              }
+            }
+          },
+          "put": {
+            "summary": "Update ticket with given ID",
+            "tags": [
+              "Tickets"
+            ],
+            "parameters": [
+              {
+                "name": "ticket",
+                "in": "body",
+                "description": "Ticket with new values of properties",
+                "schema": {
+                  "$ref": "#/definitions/Ticket"
+                }
+              }
+            ],
+            "responses": {
+              "200": {
+                "description": "Ticket updated",
+                "schema": {
+                  "$ref": "#/definitions/Ticket"
+                }
+              }
+            }
+          }
+        }
+      },
+      "definitions": {
+        "Tickets": {
+          "required": [
+            "email",
+            "_id"
+          ],
+          "properties": {
+            "_id": {
+              "type": "string",
+              "uniqueItems": true
+            },
+            "ticketNumber": {
+              "type": "string",
+              "uniqueItems": true
+            },
+            "ticketName": {
+              "type": "string"
+            },
+            "topPrize": {
+              "type": "string"
+            },
+            "topPrizeRemaining": {
+                "type": "string"
+              },
+              "ticketCost": {
+                "type": "string"
+              }
+          }
+        },
+        "Ticketssss": {
+          "type": "array",
+          "$ref": "#/definitions/Tickets"
+        }
+      }
+    }
