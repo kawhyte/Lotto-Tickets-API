@@ -1,20 +1,20 @@
 {
     "swagger": "2.0",
     "info": {
-      "version": "1.0.1",
+      "version": "1.0.0",
       "title": "Lotto Scratch-off API",
-      "description": "A Lotto Scratch-off API",
+      "description": "This is a Lottery Scratch-off ticket API",
       "license": {
-        "name": "MIT",
-        "url": "https://opensource.org/licenses/MIT"
+        "name": "Created by Kenny",
+        "url": "https://www.kennywhyte.com"
       }
     },
     "host": "localhost:3000",
     "basePath": "/api/",
     "tags": [
       {
-        "name": "Lotto Scrach-off",
-        "description": "API for Lotto Scrach-off"
+        "name": "Lottery Scratch-off tickets"
+        
       }
     ],
 
@@ -40,9 +40,10 @@
               {
                 "name": "ticket",
                 "in": "body",
-                "description": "Ticket that we want to create",
+                "required":true,
+                "description": "Ticket object that we want to create",
                 "schema": {
-                  "$ref": "#/definitions/CreateNewTicket"
+                  "$ref": "#/definitions/Tickets"
                 }
               }
             ],
@@ -53,7 +54,7 @@
               "200": {
                 "description": "New ticket created",
                 "schema": {
-                  "$ref": "#/definitions/CreateNewTicket"
+                  "$ref": "#/definitions/Tickets"
                 }
               }
             }
@@ -62,7 +63,7 @@
             "tags": [
               "Tickets"
             ],
-            "summary": "Get all tickets",
+            "summary": "Get all tickets in the system",
             "responses": {
               "200": {
                 "description": "OK",
@@ -79,7 +80,7 @@
               "name": "ticketId",
               "in": "path",
               "required": true,
-              "description": "ID of ticket that we want to find",
+              "description": "ID of ticket that you want to locate",
               "type": "string"
             }
           ],
@@ -87,13 +88,19 @@
             "tags": [
               "Tickets"
             ],
-            "summary": "Get ticket with ID",
+            "summary": "Find ticket by ID",
             "responses": {
               "200": {
                 "description": "Ticket found",
                 "schema": {
                   "$ref": "#/definitions/Tickets"
                 }
+              },
+              "400":{
+                "description": "Invalid Id supplied"
+              },
+              "404":{
+                "description": "Ticket not found"
               }
             }
           },
@@ -108,6 +115,12 @@
                 "schema": {
                   "$ref": "#/definitions/Tickets"
                 }
+              },
+              "400":{
+                "description": "Invalid Id supplied"
+              },
+              "404":{
+                "description": "Ticket not found"
               }
             }
           },
@@ -122,7 +135,7 @@
                 "in": "body",
                 "description": "Ticket with new values of properties",
                 "schema": {
-                  "$ref": "#/definitions/CreateNewTicket"
+                  "$ref": "#/definitions/Tickets"
                 }
               }
             ],
@@ -135,15 +148,110 @@
               }
             }
           }
+        },
+
+        "/user": {
+          "post": {
+            "tags": [
+              "User"
+            ],
+            "summary": "Add a new user",
+            "description": "Add a new user",
+            "parameters": [
+              {
+                "name": "user",
+                "in": "body",
+                "description": "User that we want to create",
+                "schema": {
+                  "$ref": "#/definitions/User"
+                }
+              }
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "responses": {
+              "200": {
+                "description": "New user created",
+                "schema": {
+                  "$ref": "#/definitions/User"
+                }
+              }
+            }
+          }
+         
+        },
+
+        "/auth": {
+          "get": {
+            "tags": [
+              "User"
+            ],
+            "summary": "Logs user into system",
+            "description": "Get the user who is currenlty logged in",
+            "parameters": [
+              {
+                "name": "user",
+                "in": "body",
+                "description": "Current User",
+                "schema": {
+                  "$ref": "#/definitions/User"
+                }
+              }
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "responses": {
+              "200": {
+                "description": "User found",
+                "schema": {
+                  "$ref": "#/definitions/User"
+                }
+              }
+            }
+          }
+         
+        },
+
+
+        "/me": {
+          "get": {
+            "tags": [
+              "User"
+            ],
+            "summary": "Get current user",
+            "description": "Get the user who is currenlty logged in",
+            "parameters": [
+              {
+                "name": "user",
+                "in": "body",
+                "description": "Current User",
+                "schema": {
+                  "$ref": "#/definitions/User"
+                }
+              }
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "responses": {
+              "200": {
+                "description": "User found",
+                "schema": {
+                  "$ref": "#/definitions/User"
+                }
+              }
+            }
+          }
+         
         }
+
       },
       "definitions": {
         "Tickets": {
           "properties": {
-            "_id": {
-              "type": "string",
-              "uniqueItems": true
-            },
+            
             "ticketNumber": {
               "type": "string",
               "uniqueItems": true
@@ -162,28 +270,31 @@
               }
           }
         },
-        "CreateNewTicket": {
+
+          "User": {
             "properties": {
-                "ticketNumber": {
-                  "type": "string",
-                  "uniqueItems": true
-                },
-                "ticketName": {
+              "_id": {
+                "type": "string",
+                "uniqueItems": true
+              },
+              "ticketNumber": {
+                "type": "string",
+                "uniqueItems": true
+              },
+              "ticketName": {
+                "type": "string"
+              },
+              "topPrize": {
+                "type": "string"
+              },
+              "topPrizeRemaining": {
                   "type": "string"
                 },
-                "topPrize": {
+                "ticketCost": {
                   "type": "string"
-                },
-                "topPrizeRemaining": {
-                    "type": "string"
-                  },
-                  "ticketCost": {
-                    "type": "string"
-                  }
-              }
+                }
+            }
           }
-
-
 
         
       }
