@@ -1,0 +1,1 @@
+mongoimport --db lotto --collection tickets --drop --file lotto-data.json --jsonArray

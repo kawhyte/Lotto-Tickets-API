@@ -34,6 +34,7 @@
             "tags": [
               "Tickets"
             ],
+            "summary": "Add a new ticket",
             "description": "Add a new ticket to the system",
             "parameters": [
               {
@@ -41,7 +42,7 @@
                 "in": "body",
                 "description": "Ticket that we want to create",
                 "schema": {
-                  "$ref": "#/definitions/Ticket"
+                  "$ref": "#/definitions/CreateNewTicket"
                 }
               }
             ],
@@ -50,9 +51,9 @@
             ],
             "responses": {
               "200": {
-                "description": "New ticket is created",
+                "description": "New ticket created",
                 "schema": {
-                  "$ref": "#/definitions/Ticket"
+                  "$ref": "#/definitions/CreateNewTicket"
                 }
               }
             }
@@ -61,7 +62,7 @@
             "tags": [
               "Tickets"
             ],
-            "summary": "Get all tickets in system",
+            "summary": "Get all tickets",
             "responses": {
               "200": {
                 "description": "OK",
@@ -86,18 +87,18 @@
             "tags": [
               "Tickets"
             ],
-            "summary": "Get ticket with given ID",
+            "summary": "Get ticket with ID",
             "responses": {
               "200": {
                 "description": "Ticket found",
                 "schema": {
-                  "$ref": "#/definitions/Ticket"
+                  "$ref": "#/definitions/Tickets"
                 }
               }
             }
           },
           "delete": {
-            "summary": "Delete ticket with given ID",
+            "summary": "Delete ticket with ID",
             "tags": [
               "Tickets"
             ],
@@ -105,13 +106,13 @@
               "200": {
                 "description": "Ticket deleted",
                 "schema": {
-                  "$ref": "#/definitions/Ticket"
+                  "$ref": "#/definitions/Tickets"
                 }
               }
             }
           },
           "put": {
-            "summary": "Update ticket with given ID",
+            "summary": "Update ticket with ID",
             "tags": [
               "Tickets"
             ],
@@ -121,7 +122,7 @@
                 "in": "body",
                 "description": "Ticket with new values of properties",
                 "schema": {
-                  "$ref": "#/definitions/Ticket"
+                  "$ref": "#/definitions/CreateNewTicket"
                 }
               }
             ],
@@ -129,7 +130,7 @@
               "200": {
                 "description": "Ticket updated",
                 "schema": {
-                  "$ref": "#/definitions/Ticket"
+                  "$ref": "#/definitions/Tickets"
                 }
               }
             }
@@ -138,10 +139,6 @@
       },
       "definitions": {
         "Tickets": {
-          "required": [
-            "email",
-            "_id"
-          ],
           "properties": {
             "_id": {
               "type": "string",
@@ -165,9 +162,29 @@
               }
           }
         },
-        "Ticketssss": {
-          "type": "array",
-          "$ref": "#/definitions/Tickets"
-        }
+        "CreateNewTicket": {
+            "properties": {
+                "ticketNumber": {
+                  "type": "string",
+                  "uniqueItems": true
+                },
+                "ticketName": {
+                  "type": "string"
+                },
+                "topPrize": {
+                  "type": "string"
+                },
+                "topPrizeRemaining": {
+                    "type": "string"
+                  },
+                  "ticketCost": {
+                    "type": "string"
+                  }
+              }
+          }
+
+
+
+        
       }
     }
