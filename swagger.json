@@ -150,7 +150,7 @@
           }
         },
 
-        "/user": {
+        "/users": {
           "post": {
             "tags": [
               "User"
@@ -161,6 +161,7 @@
               {
                 "name": "user",
                 "in": "body",
+                "required":true,
                 "description": "User that we want to create",
                 "schema": {
                   "$ref": "#/definitions/User"
@@ -183,7 +184,7 @@
         },
 
         "/auth": {
-          "get": {
+          "post": {
             "tags": [
               "User"
             ],
@@ -273,26 +274,16 @@
 
           "User": {
             "properties": {
-              "_id": {
+              "name": {
                 "type": "string",
                 "uniqueItems": true
               },
-              "ticketNumber": {
-                "type": "string",
-                "uniqueItems": true
-              },
-              "ticketName": {
+              "email": {
                 "type": "string"
               },
-              "topPrize": {
+              "password": {
                 "type": "string"
-              },
-              "topPrizeRemaining": {
-                  "type": "string"
-                },
-                "ticketCost": {
-                  "type": "string"
-                }
+              }
             }
           }
 
