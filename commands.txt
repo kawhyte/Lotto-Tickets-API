@@ -1,1 +1,3 @@
 mongoimport --db lotto --collection tickets --drop --file lotto-data.json --jsonArray
+
+export Lotto_jwtPrivateKey=Kenny1215

@@ -5,9 +5,18 @@ const bcrypt = require('bcryptjs');
 const _ = require('lodash');
 const {User,validate} = require('../models/user');
 const mongoose = require('mongoose');
+var bodyParser = require('body-parser');
 const express = require('express');
 const router = express.Router();
 
+
+var bodyParser = require('body-parser');
+
+const app = express();
+
+    app.use(bodyParser.urlencoded({
+        extended: true
+    }));
 
 //GET CURRENT USER INFO
 // router.get('/:id', async (req, res) was not used for security reason
@@ -21,6 +30,8 @@ res.send(user);
 
 // CREATE NEW USER END POINT
 router.post('/', async (req, res) => {
+    console.log(req.body);
+    
     const {error} = validate(req.body);
 
     if (error) return res.status(400).send(error.details[0].message);

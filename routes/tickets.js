@@ -1,9 +1,6 @@
 const auth = require('../middleware/auth');
 const admin = require('../middleware/admin')
-const {
-    Ticket,
-    validateTicket
-} = require('../models/tickets')
+const {Ticket,validateTicket} = require('../models/tickets')
 const Joi = require('joi');
 const mongoose = require('mongoose');
 const express = require('express');

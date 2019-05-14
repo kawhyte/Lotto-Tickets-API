@@ -485,3 +485,86 @@
 {"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T13:11:05.336Z"}
 {"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T13:11:08.637Z"}
 {"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T13:11:08.703Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T17:16:20.998Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T17:16:21.050Z"}
+{"message":"secretOrPrivateKey must have a value","stack":"Error: secretOrPrivateKey must have a value\n    at Object.module.exports [as sign] (/Users/kenren/Lotto/lotto-ticket/node_modules/jsonwebtoken/sign.js:107:20)\n    at model.userSchema.methods.generateAuthToken (/Users/kenren/Lotto/lotto-ticket/models/user.js:30:21)\n    at router.post (/Users/kenren/Lotto/lotto-ticket/routes/auth.js:24:24)","level":"error","timestamp":"2019-05-14T17:17:42.339Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T17:21:04.505Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T17:21:04.554Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T17:26:45.384Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T17:26:45.446Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T17:26:47.588Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T17:26:47.635Z"}
+{"message":"Illegal arguments: undefined, string","stack":"Error: Illegal arguments: undefined, string\n    at _async (/Users/kenren/Lotto/lotto-ticket/node_modules/bcryptjs/dist/bcrypt.js:214:46)\n    at /Users/kenren/Lotto/lotto-ticket/node_modules/bcryptjs/dist/bcrypt.js:223:17\n    at new Promise (<anonymous>)\n    at Object.bcrypt.hash (/Users/kenren/Lotto/lotto-ticket/node_modules/bcryptjs/dist/bcrypt.js:222:20)\n    at router.post (/Users/kenren/Lotto/lotto-ticket/routes/users.js:33:34)","level":"error","timestamp":"2019-05-14T17:28:34.361Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T17:30:29.798Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T17:30:29.845Z"}
+{"message":"Illegal arguments: undefined, string","stack":"Error: Illegal arguments: undefined, string\n    at _async (/Users/kenren/Lotto/lotto-ticket/node_modules/bcryptjs/dist/bcrypt.js:214:46)\n    at /Users/kenren/Lotto/lotto-ticket/node_modules/bcryptjs/dist/bcrypt.js:223:17\n    at new Promise (<anonymous>)\n    at Object.bcrypt.hash (/Users/kenren/Lotto/lotto-ticket/node_modules/bcryptjs/dist/bcrypt.js:222:20)\n    at router.post (/Users/kenren/Lotto/lotto-ticket/routes/users.js:33:34)","level":"error","timestamp":"2019-05-14T17:30:44.483Z"}
+{"message":"Illegal arguments: undefined, string","stack":"Error: Illegal arguments: undefined, string\n    at _async (/Users/kenren/Lotto/lotto-ticket/node_modules/bcryptjs/dist/bcrypt.js:214:46)\n    at /Users/kenren/Lotto/lotto-ticket/node_modules/bcryptjs/dist/bcrypt.js:223:17\n    at new Promise (<anonymous>)\n    at Object.bcrypt.hash (/Users/kenren/Lotto/lotto-ticket/node_modules/bcryptjs/dist/bcrypt.js:222:20)\n    at router.post (/Users/kenren/Lotto/lotto-ticket/routes/users.js:33:34)","level":"error","timestamp":"2019-05-14T17:31:15.684Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T17:32:18.643Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T17:32:18.728Z"}
+{"message":"Illegal arguments: undefined, string","stack":"Error: Illegal arguments: undefined, string\n    at _async (/Users/kenren/Lotto/lotto-ticket/node_modules/bcryptjs/dist/bcrypt.js:214:46)\n    at /Users/kenren/Lotto/lotto-ticket/node_modules/bcryptjs/dist/bcrypt.js:223:17\n    at new Promise (<anonymous>)\n    at Object.bcrypt.hash (/Users/kenren/Lotto/lotto-ticket/node_modules/bcryptjs/dist/bcrypt.js:222:20)\n    at router.post (/Users/kenren/Lotto/lotto-ticket/routes/users.js:33:34)","level":"error","timestamp":"2019-05-14T17:32:26.661Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T17:36:14.071Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T17:36:14.136Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T17:43:22.388Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T17:43:22.466Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:00:53.290Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:00:53.374Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:00:56.085Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:00:56.165Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:12:26.157Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:12:26.225Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:12:36.483Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:12:36.543Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:12:43.338Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:12:43.405Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:12:44.546Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:12:44.653Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:12:46.061Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:12:46.126Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:12:49.175Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:12:49.246Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:12:52.589Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:12:52.653Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:13:05.446Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:13:05.515Z"}
+{"message":"Cannot read property 'body' of undefined","stack":"TypeError: Cannot read property 'body' of undefined\n    at router.post (/Users/kenren/Lotto/lotto-ticket/routes/users.js:24:21)\n    at newFn (/Users/kenren/Lotto/lotto-ticket/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/kenren/Lotto/lotto-ticket/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/kenren/Lotto/lotto-ticket/node_modules/express/lib/router/route.js:137:13)\n    at Route.dispatch (/Users/kenren/Lotto/lotto-ticket/node_modules/express/lib/router/route.js:112:3)\n    at newFn (/Users/kenren/Lotto/lotto-ticket/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/kenren/Lotto/lotto-ticket/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/kenren/Lotto/lotto-ticket/node_modules/express/lib/router/index.js:281:22\n    at Function.process_params (/Users/kenren/Lotto/lotto-ticket/node_modules/express/lib/router/index.js:335:12)\n    at next (/Users/kenren/Lotto/lotto-ticket/node_modules/express/lib/router/index.js:275:10)\n    at Function.handle (/Users/kenren/Lotto/lotto-ticket/node_modules/express/lib/router/index.js:174:3)\n    at router (/Users/kenren/Lotto/lotto-ticket/node_modules/express/lib/router/index.js:47:12)\n    at newFn (/Users/kenren/Lotto/lotto-ticket/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/kenren/Lotto/lotto-ticket/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/Users/kenren/Lotto/lotto-ticket/node_modules/express/lib/router/index.js:317:13)\n    at /Users/kenren/Lotto/lotto-ticket/node_modules/express/lib/router/index.js:284:7","level":"error","timestamp":"2019-05-14T18:14:58.737Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:15:22.519Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:15:22.588Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:15:25.475Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:15:25.536Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:15:28.614Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:15:28.679Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:15:53.607Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:15:53.669Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:21:17.489Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:21:17.554Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:21:19.033Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:21:19.099Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:21:22.311Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:21:22.387Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:21:27.904Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:21:27.969Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:33:10.282Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:33:10.341Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:33:36.270Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:33:36.340Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:36:33.933Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:36:34.011Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:41:32.502Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:45:20.414Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:45:20.500Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:45:36.782Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:45:36.858Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:45:58.853Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:45:58.923Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T18:46:07.505Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T18:46:07.589Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T20:56:18.546Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T20:56:18.614Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T20:56:23.929Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T20:56:23.988Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T20:56:26.107Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T20:56:26.156Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T20:57:00.770Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T20:57:00.821Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-05-14T20:57:07.140Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-05-14T20:57:07.185Z"}
