@@ -2,8 +2,8 @@
     "swagger": "2.0",
     "info": {
       "version": "1.0.0",
-      "title": "Lotto Scratch-off API",
-      "description": "This is a Lottery Scratch-off ticket API",
+      "title": "Florida Lotto Scratch-off API",
+      "description": "This is a Florida Lottery Scratch-off ticket API",
       "license": {
         "name": "Created by Kenny",
         "url": "https://www.kennywhyte.com"
@@ -13,14 +13,13 @@
     "basePath": "/api/",
     "tags": [
       {
-        "name": "Lottery Scratch-off tickets"
+        "name": "Florida Lottery Scratch-off tickets"
         
       }
     ],
 
     "schemes": [
-        "https",
-        "http"
+        "https"
       ],
       "consumes": [
         "application/json"

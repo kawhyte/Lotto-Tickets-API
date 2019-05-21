@@ -29,6 +29,10 @@
     "morgan": "^1.9.1",
     "swagger-ui-express": "^4.0.2",
     "winston": "^2.4.0",
-    "winston-mongodb": "^3.0.0"
+    "winston-mongodb": "^3.0.0",
+    "cheerio": "^1.0.0-rc.2",
+    "cli-table2": "^0.2.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
   }
 }
