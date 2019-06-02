@@ -29,7 +29,6 @@
     "lodash": "^4.17.11",
     "mongoose": "^5.5.5",
     "morgan": "^1.9.1",
-    "puppeteer": "^1.16.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "swagger-ui-express": "^4.0.2",

@@ -40,7 +40,13 @@ router.post('/', async (req, res) => {
         ticketName: req.body.ticketName,
         topPrize: req.body.topPrize,
         topPrizeRemaining: req.body.topPrizeRemaining,
-        ticketCost: req.body.ticketCost
+        ticketCost: req.body.ticketCost,
+        launchDate: req.body.launchDate,
+        endDate: req.body.endDate,
+        redemptionDeadline: req.body.redemptionDeadline,
+        overallOddsOfWinning: req.body.overallOddsOfWinning,
+        gameImageLink: req.body.gameImageLink,
+        State: req.body.State
     });
 
     ticket = await ticket.save();
