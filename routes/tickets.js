@@ -62,7 +62,7 @@ router.post('/', async (req, res) => {
 });
 
 //Update a ticket via ID  ///, [auth, admin]
-router.put('/:id', async (req, res) => {
+router.put('/:id', [auth, admin],async (req, res) => {
 
     const result = validateTicket(req.body);
 
@@ -89,7 +89,7 @@ router.put('/:id', async (req, res) => {
 });
 
 //Delete ticket via Id // , [auth, admin]
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', [auth, admin], async (req, res) => {
 
     const ticket = await Ticket.findByIdAndRemove(req.params.id);
 

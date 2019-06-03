@@ -871,3 +871,6 @@
 {"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T01:51:18.175Z"}
 {"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T01:51:22.984Z"}
 {"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T01:51:23.003Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T19:39:06.725Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T19:40:37.739Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T19:40:37.782Z"}

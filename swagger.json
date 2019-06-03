@@ -34,8 +34,8 @@
             "tags": [
               "Tickets"
             ],
-            "summary": "Add a new ticket",
-            "description": "Add a new ticket to the system",
+            "summary": "Add a new scratch-off ticket to Database",
+            "description": "Add a new scratch-off ticket",
             "parameters": [
               {
                 "name": "ticket",
@@ -52,7 +52,7 @@
             ],
             "responses": {
               "200": {
-                "description": "New ticket created",
+                "description": "New ticket added",
                 "schema": {
                   "$ref": "#/definitions/Tickets"
                 }
@@ -63,7 +63,7 @@
             "tags": [
               "Tickets"
             ],
-            "summary": "Get all tickets in the system",
+            "summary": "Get all scratch-off tickets in the system",
             "responses": {
               "200": {
                 "description": "OK",
@@ -99,7 +99,7 @@
               "name": "ticketId",
               "in": "path",
               "required": true,
-              "description": "ID of ticket that you want to locate",
+              "description": "ID of scratch-off game that you want to locate",
               "type": "string"
             }
           ],
