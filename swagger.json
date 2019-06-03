@@ -74,6 +74,25 @@
             }
           }
         },
+
+        "/tickets/best": {
+          "get": {
+            "tags": [
+              "Tickets"
+            ],
+            "summary": "Returns the best ticket in the to play",
+            "responses": {
+              "200": {
+                "description": "OK",
+                "schema": {
+                  "$ref": "#/definitions/Tickets"
+                }
+              }
+            }
+          }
+          
+        },
+
         "/tickets/{ticketId}": {
           "parameters": [
             {
