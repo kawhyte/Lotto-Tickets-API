@@ -15,6 +15,13 @@ router.get('/', async (req, res, next) => {
         res.send(tickets);
 })
 
+router.get('/best', async (req, res, next) => {
+    //throw new Error('lotto GET error');
+        const ticket = await Ticket.find().sort(req.param.ticketNumber).limit(1);
+        res.send(ticket);
+})
+
+
 //Get ticket with id
 router.get('/:id', async (req, res) => {
 
