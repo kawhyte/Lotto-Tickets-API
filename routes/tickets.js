@@ -6,7 +6,6 @@ const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 
-
 // TICKET END POINTS
 //Get all Tickets
 router.get('/', async (req, res, next) => {
