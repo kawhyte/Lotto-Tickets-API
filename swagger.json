@@ -3,13 +3,13 @@
     "info": {
       "version": "1.0.0",
       "title": "Florida Lotto Scratch-off API",
-      "description": "This is a Florida Lottery Scratch-off ticket API",
+      "description": "An API for the Florida Lottery Scratch-off game",
       "license": {
         "name": "Created by Kenny",
         "url": "https://www.kennywhyte.com"
       }
     },
-    "host": "lottoticketapi.herokuapp.com",
+    "host": "localhost:3000",
     "basePath": "/api/",
     "tags": [
       {
@@ -19,7 +19,8 @@
     ],
 
     "schemes": [
-        "https"
+        "https",
+        "http"
       ],
       "consumes": [
         "application/json"
@@ -266,6 +267,24 @@
                 "type": "string"
               },
               "ticketCost": {
+                "type": "string"
+              },
+              "launchDate": {
+                "type": "string"
+              },
+              "endDate": {
+                "type": "string"
+              },
+              "redemptionDeadline": {
+                "type": "string"
+              },
+              "overallOddsOfWinning": {
+                "type": "string"
+              },
+              "gameImageLink": {
+                "type": "string"
+              },
+              "State": {
                 "type": "string"
               }
           }

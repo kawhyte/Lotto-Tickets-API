@@ -1,3 +1,5 @@
 mongoimport --db lotto --collection tickets --drop --file lotto-data.json --jsonArray
 
 export Lotto_jwtPrivateKey=
+
+swagger host: lottoticketapi.herokuapp.com
