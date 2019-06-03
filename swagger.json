@@ -80,7 +80,7 @@
             "tags": [
               "Tickets"
             ],
-            "summary": "Returns the best ticket in the to play",
+            "summary": "Returns the \"Ticket of the Day\". The best ticket the user can buy to win the grand prize.",
             "responses": {
               "200": {
                 "description": "OK",
