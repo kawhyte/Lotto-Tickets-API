@@ -9,7 +9,7 @@
         "url": "https://www.kennywhyte.com"
       }
     },
-    "host": "lottoticketapi.herokuapp.com",
+    "host": "localhost:3000",
     "basePath": "/api/",
     "tags": [
       {
@@ -124,7 +124,7 @@
             }
           },
           "delete": {
-            "summary": "Delete ticket with ID",
+            "summary": "Delete ticket with ID. This can only be done by the logged in user.",
             "tags": [
               "Tickets"
             ],
@@ -201,21 +201,20 @@
           }
          
         },
-
         "/auth": {
           "post": {
             "tags": [
               "User"
             ],
-            "summary": "Logs user into system",
-            "description": "Get the user who is currenlty logged in",
+            "summary": "User Authentication",
+            "description": "User has to be Authenticated to POST, UPDATE and DELETE tickets",
             "parameters": [
               {
                 "name": "user",
                 "in": "body",
-                "description": "Current User",
+                "description": " User Authentication",
                 "schema": {
-                  "$ref": "#/definitions/User"
+                  "$ref": "#/definitions/User Authentication"
                 }
               }
             ],
@@ -224,9 +223,9 @@
             ],
             "responses": {
               "200": {
-                "description": "User found",
+                "description": "Error logging in",
                 "schema": {
-                  "$ref": "#/definitions/User"
+                  "$ref": "#/definitions/User Authentication"
                 }
               }
             }
@@ -322,8 +321,16 @@
                 "type": "string"
               }
             }
+          },
+          "User Authentication": {
+            "properties": {
+              "email": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              }
+            }
           }
-
-        
       }
     }

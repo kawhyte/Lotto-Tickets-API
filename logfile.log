@@ -874,3 +874,182 @@
 {"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T19:39:06.725Z"}
 {"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T19:40:37.739Z"}
 {"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T19:40:37.782Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T19:46:36.817Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T19:46:36.836Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T19:52:57.033Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T19:52:57.049Z"}
+{"message":"secretOrPrivateKey must have a value","stack":"Error: secretOrPrivateKey must have a value\n    at Object.module.exports [as sign] (/Users/Kenny/Lotto-Ticket-API/lotto-ticket/node_modules/jsonwebtoken/sign.js:107:20)\n    at model.userSchema.methods.generateAuthToken (/Users/Kenny/Lotto-Ticket-API/lotto-ticket/models/user.js:30:21)\n    at router.post (/Users/Kenny/Lotto-Ticket-API/lotto-ticket/routes/auth.js:24:24)\n    at <anonymous>","level":"error","timestamp":"2019-06-03T19:53:42.949Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T19:54:26.621Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T19:54:26.637Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:06:43.618Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:06:43.652Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:06:45.987Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:06:46.002Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:06:49.464Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:06:49.480Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:06:56.464Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:06:56.480Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:07:03.851Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:07:03.867Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:07:05.427Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:07:05.443Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:07:08.842Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:07:08.858Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:07:13.742Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:07:13.758Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:07:17.139Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:07:17.155Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:07:44.131Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:07:44.148Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:07:47.192Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:07:47.207Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:07:50.516Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:07:50.531Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:07:54.901Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:07:54.917Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:10:12.773Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:10:12.789Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:10:38.661Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:10:38.677Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:10:42.429Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:10:42.445Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:11:44.931Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:11:44.947Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:12:53.778Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:12:53.794Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:12:57.607Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:12:57.623Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:13:34.573Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:13:34.589Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:13:41.642Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:13:41.657Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:13:44.886Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:13:44.902Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:13:48.813Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:13:48.829Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:14:01.103Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:14:01.119Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:14:04.872Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:14:04.887Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:14:08.332Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:14:08.348Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:14:11.324Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:14:11.339Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:14:15.465Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:14:15.481Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:14:20.462Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:14:20.478Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:16:50.486Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:16:50.502Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:16:54.316Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:16:54.332Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:17:04.985Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:17:05.001Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:18:05.520Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:18:05.535Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:18:09.642Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:18:09.657Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:19:01.520Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:19:01.535Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:20:10.020Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:20:10.035Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:20:14.565Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:20:14.582Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:20:29.873Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:20:29.889Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:20:42.075Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:20:42.091Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:21:19.202Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:21:19.217Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:23:26.296Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:23:26.312Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:23:28.882Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:23:28.898Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:33:28.169Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:33:28.184Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:33:36.069Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:33:36.084Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:33:37.607Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:33:37.623Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:33:43.591Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:33:43.607Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:34:09.477Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:34:09.493Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:37:49.973Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:37:49.989Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:38:01.597Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:38:01.612Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:48:56.285Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:48:56.300Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:50:03.430Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:50:03.445Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:50:35.997Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:50:36.013Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:51:04.610Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:51:04.625Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:51:12.714Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:51:12.729Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:51:15.005Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:51:15.020Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:51:18.998Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:51:19.014Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:51:33.996Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:51:34.012Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:51:37.067Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:51:37.082Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:52:44.528Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:52:44.544Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:52:46.104Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:52:46.119Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:56:01.562Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:56:01.578Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:56:05.773Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:56:05.789Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:56:26.189Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:56:26.205Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:56:28.778Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:56:28.794Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:56:31.416Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:56:31.432Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:56:38.306Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:56:38.321Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:56:41.095Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:56:41.110Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:56:47.060Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:56:47.076Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:57:07.492Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:57:07.508Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T21:57:29.625Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T21:57:29.641Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T22:06:52.516Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T22:06:52.532Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T22:06:56.337Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T22:06:56.354Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T22:06:58.179Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T22:06:58.195Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T22:07:00.342Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T22:07:00.357Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T22:07:03.342Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T22:07:03.358Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T22:07:08.112Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T22:07:08.127Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T22:07:38.149Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T22:07:38.165Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T22:09:23.554Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T22:09:23.570Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T22:09:25.906Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T22:09:25.921Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T22:10:18.726Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T22:10:18.742Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T22:11:03.279Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T22:11:03.295Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T22:15:58.256Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T22:15:58.272Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T22:16:04.174Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T22:16:04.189Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T22:17:25.530Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T22:17:25.545Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T22:17:32.256Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T22:17:32.278Z"}
+{"level":"info","message":"The App is listening on port 3000 and awaiting your command, Kenny","timestamp":"2019-06-03T22:18:10.500Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-06-03T22:18:10.516Z"}
