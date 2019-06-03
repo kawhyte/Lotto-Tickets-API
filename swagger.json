@@ -9,7 +9,7 @@
         "url": "https://www.kennywhyte.com"
       }
     },
-    "host": "localhost:3000",
+    "host": "lottoticketapi.herokuapp.com",
     "basePath": "/api/",
     "tags": [
       {
