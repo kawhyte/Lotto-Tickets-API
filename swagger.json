@@ -209,7 +209,7 @@
               "User"
             ],
             "summary": "Add a new user",
-            "description": "Add a new user. This can only be done by an admin.",
+            "description": "Add a new user.",
             "parameters": [
               {
                 "name": "user",
