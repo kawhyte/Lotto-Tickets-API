@@ -13,9 +13,12 @@ router.post('/', async (req, res) => {
     const {error} = validate(req.body);
 
     if (error) return res.status(400).send(error.details[0].message);
-
+    
+    console.log(req.body.password);
     let user = await User.findOne({email: req.body.email});
-    if (!user) return res.status(400).send('Email-Invalid Credentials.');
+    console.log(user.password);
+    if (!user) return res.status(400).send('Email-Invalid Credentials.', user);
+    if (user) return res.status(400).send('Email-Good',user);
 
     validPassword = await bcrypt.compare(req.body.password, user.password)
 
