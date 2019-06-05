@@ -20,7 +20,7 @@ router.post('/', async (req, res) => {
 
     if (!user) return res.status(400).send('Email-Invalid Credentials.');
     
-    
+  
     let bodyPassword = req.body.password;
     let dbpassword =  user.password;
     let validPassword = await bcrypt.compare(bodyPassword, dbpassword);
@@ -30,7 +30,7 @@ router.post('/', async (req, res) => {
 
     if (!validPassword) return res.status(400).send('Password - Invalid Credentials.');
     res.send(validPassword);
-    
+
     const token = user.generateAuthToken();
     res.send(token); 
 });
