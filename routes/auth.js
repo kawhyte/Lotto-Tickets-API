@@ -16,14 +16,15 @@ router.post('/', async (req, res) => {
     
     
     let user = await User.findOne({email: req.body.email});
-    res.send(req.body.password);
+   
 
     if (!user) return res.status(400).send('Email-Invalid Credentials.');
     if (user) return res.status(400).send('Email-Good');
     
 
     validPassword = await bcrypt.compare(req.body.password, user.password)
-
+    res.send(validPassword);
+    
     if (!validPassword) return res.status(400).send('Password - Invalid Credentials.');
     
     const token = user.generateAuthToken();
