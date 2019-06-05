@@ -24,7 +24,7 @@ router.post('/', async (req, res) => {
     let bodyPassword = req.body.password;
     let dbpassword =  user.password;
     let validPassword = await bcrypt.compare(bodyPassword, dbpassword);
-    res.send(validPassword);
+    //res.send(validPassword);
     //let validPassword = await bcrypt.compare(req.body.password, user.password)
     //validPassword = await bcrypt.compare("12345", user.password)
 
