@@ -275,16 +275,7 @@
             ],
             "summary": "Get current user",
             "description": "Get the user who is currenlty logged in",
-            "parameters": [
-              {
-                "name": "user",
-                "in": "body",
-                "description": "Current User",
-                "schema": {
-                  "$ref": "#/definitions/User"
-                }
-              }
-            ],
+          
             "produces": [
               "application/json"
             ],
