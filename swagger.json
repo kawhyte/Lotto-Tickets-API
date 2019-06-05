@@ -233,29 +233,8 @@
               }
             }
           },
-          "/me": {
-            "get": {
-              "tags": [
-                "User"
-              ],
-              "summary": "Get current user",
-              "description": "Get the user who is currenlty logged in",
-            
-              "produces": [
-                "application/json"
-              ],
-              "responses": {
-                "200": {
-                  "description": "User found",
-                  "schema": {
-                    "$ref": "#/definitions/User"
-                  }
-                }
-              }
-            }
-           
-          }
-  
+
+
 
 
 
@@ -295,10 +274,32 @@
             }
           }
          
+        },
+
+
+        "users/me": {
+          "get": {
+            "tags": [
+              "User"
+            ],
+            "summary": "Get current user",
+            "description": "Get the user who is currenlty logged in",
+          
+            "produces": [
+              "application/json"
+            ],
+            "responses": {
+              "200": {
+                "description": "User found",
+                "schema": {
+                  "$ref": "#/definitions/User"
+                }
+              }
+            }
+          }
+         
         }
 
-
-        
       },
 
 "components":{
