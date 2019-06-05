@@ -14,7 +14,6 @@
     "tags": [
       {
         "name": "Florida Lottery Scratch-off tickets"
-        
       }
     ],
 
@@ -22,6 +21,14 @@
         "https",
         "http"
       ],
+      "securityDefinitions":{
+        "x-auth-token":{
+          "type": "apiKey",
+          "name": "x-auth-token",
+          "in": "header",
+          "description": "A valid JWT token is needed to accessing the the POST, DELETE and UPDATE API. \n To get a JWT token, you will need to be an authenticated user." 
+        } 
+      },
       "consumes": [
         "application/json"
       ],
@@ -34,7 +41,11 @@
             "tags": [
               "Tickets"
             ],
-            "summary": "Add a new scratch-off ticket to Database",
+            "security":[{
+              "x-auth-token":[]
+            }],
+            
+            "summary": "Add a new scratch-off ticket to Database. This can only be done by an Authorized user.",
             "description": "Add a new scratch-off ticket",
             "parameters": [
               {
@@ -55,6 +66,12 @@
                 "description": "New ticket added",
                 "schema": {
                   "$ref": "#/definitions/Tickets"
+                }
+              },
+              "401": {
+                "description": "POST: Access denied. You are not authorized to perform this task.",
+                "schema": {
+                  "$ref": "#/components/responses/UnauthorizedError"
                 }
               }
             }
@@ -90,7 +107,6 @@
               }
             }
           }
-          
         },
 
         "/tickets/{ticketId}": {
@@ -124,10 +140,13 @@
             }
           },
           "delete": {
-            "summary": "Delete ticket with ID. This can only be done by the logged in user.",
+            "summary": "Delete ticket with ID. This can only be done by an Authorized user.",
             "tags": [
               "Tickets"
             ],
+            "security":[{
+              "x-auth-token":[]
+            }],
             "responses": {
               "200": {
                 "description": "Ticket deleted",
@@ -140,14 +159,23 @@
               },
               "404":{
                 "description": "Ticket not found"
+              },
+              "401": {
+                "description": "DELETE: Access denied. You are not authorized to perform this task.",
+                "schema": {
+                  "$ref": "#/components/responses/UnauthorizedError"
+                }
               }
             }
           },
           "put": {
-            "summary": "Update ticket with ID",
+            "summary": "Update ticket with ID. This can only be done by an Authorized user.",
             "tags": [
               "Tickets"
             ],
+            "security":[{
+              "x-auth-token":[]
+            }],
             "parameters": [
               {
                 "name": "ticket",
@@ -164,6 +192,12 @@
                 "schema": {
                   "$ref": "#/definitions/Tickets"
                 }
+              },
+              "401": {
+                "description": "PUT: Access denied. You are not authorized to perform this task.",
+                "schema": {
+                  "$ref": "#/components/responses/UnauthorizedError"
+                }
               }
             }
           }
@@ -175,7 +209,7 @@
               "User"
             ],
             "summary": "Add a new user",
-            "description": "Add a new user",
+            "description": "Add a new user. This can only be done by an admin.",
             "parameters": [
               {
                 "name": "user",
@@ -267,6 +301,25 @@
         }
 
       },
+
+"components":{
+  "responses":{
+    "UnauthorizedError":{
+      "description" : "API key is missing or invalid",
+      "headers":"WWW_Authenticate",
+          "schema":{
+            "type": "string"
+          }
+            
+        }
+    
+    
+
+  }
+  
+
+},
+
       "definitions": {
         "Tickets": {
           "properties": {
