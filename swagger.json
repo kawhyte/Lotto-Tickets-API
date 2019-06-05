@@ -273,6 +273,9 @@
             "tags": [
               "User"
             ],
+            "security":[{
+              "x-auth-token":[]
+            }],
             "summary": "Get current user",
             "description": "Get the user who is currenlty logged in",
           
