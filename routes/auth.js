@@ -18,7 +18,7 @@ router.post('/', async (req, res) => {
     let user = await User.findOne({email: req.body.email});
    
 
-    if (!user) return res.status(400).send('Email-Invalid Credentials.');
+    if (!user) return res.status(400).send('Invalid Credentials.');
     
   
     let bodyPassword = req.body.password;
@@ -28,7 +28,7 @@ router.post('/', async (req, res) => {
     //let validPassword = await bcrypt.compare(req.body.password, user.password)
     //validPassword = await bcrypt.compare("12345", user.password)
 
-    if (!validPassword) return res.status(400).send('Password - Invalid Credentials.');
+    if (!validPassword) return res.status(400).send('Invalid Credentials.');
     //res.send(validPassword);
 
     const token = user.generateAuthToken();
