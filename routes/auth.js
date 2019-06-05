@@ -19,11 +19,11 @@ router.post('/', async (req, res) => {
    
 
     if (!user) return res.status(400).send('Email-Invalid Credentials.');
-    
-    res.send(bcrypt.compare(req.body.password, user.password));
+    //val = await bcrypt.compare("12345", "$2a$10$7b.KlHHYeit9zVFPSQp9ueRwStZR7StYSARZRBgRJ2QFU6JAOK7fC")
+    //res.send(val);
 
-    validPassword = await bcrypt.compare(req.body.password, user.password)
-    
+    let validPassword = await bcrypt.compare(req.body.password, user.password)
+    //validPassword = await bcrypt.compare("12345", user.password)
 
     if (!validPassword) return res.status(400).send('Password - Invalid Credentials.');
     
