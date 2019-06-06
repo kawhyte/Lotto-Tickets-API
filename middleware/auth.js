@@ -15,7 +15,8 @@ module.exports = function auth(req, res, next) {
 
    //check if token is valid 
    try {
-      const decodedPayload = jwt.verify(token, config.get('jwtPrivateKey'));
+     //const decodedPayload = jwt.verify(token, config.get('jwtPrivateKey'));
+      const decodedPayload = jwt.verify(token, process.env.jwtPrivateKey);
       req.user = decodedPayload;
       next();
    } catch (error) {
