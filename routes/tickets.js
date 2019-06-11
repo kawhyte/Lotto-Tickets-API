@@ -14,6 +14,13 @@ router.get('/', async (req, res, next) => {
         res.send(tickets);
 })
 
+router.get('/all', async (req, res, next) => {
+    res.render('tickets/index');
+})
+router.get('/new', async (req, res, next) => {
+        res.render('tickets/new');
+})
+
 router.get('/best', async (req, res, next) => {
     //throw new Error('lotto GET error');
         const ticket = await Ticket.find().sort(req.param.ticketNumber).limit(1);
