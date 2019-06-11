@@ -6,8 +6,21 @@ require('winston-mongodb');
 require('express-async-errors');
 const morgan = require('morgan');
 const helmet = require('helmet');
+
 const express = require('express');
+const expressLayouts = require('express-ejs-layouts')
+
 const app = express();
+
+app.set('view engine', 'ejs');
+
+app.use(expressLayouts);
+
+app.set('views', __dirname + '/views')
+app.set('layout','layouts/layout')
+
+app.use(express.static('public'));
+
 const swaggerUi = require ('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
 
