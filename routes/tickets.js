@@ -59,7 +59,12 @@ router.post('/', [auth, admin],async (req, res) => {
         redemptionDeadline: req.body.redemptionDeadline,
         overallOddsOfWinning: req.body.overallOddsOfWinning,
         gameImageLink: req.body.gameImageLink,
-        State: req.body.State
+        State: req.body.State,
+        remainingPrizes: req.body.remainingPrizes,
+        totalPrizes: req.body.totalPrizes,
+        prizePercentage:req.body.prizePercentage
+
+
     });
 
     ticket = await ticket.save();

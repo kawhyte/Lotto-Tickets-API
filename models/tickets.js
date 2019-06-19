@@ -66,7 +66,26 @@ const ticketSchema = new mongoose.Schema({
         required: true,
         minlength: 1,
         maxlength: 15
+    },
+    remainingPrizes: {
+        type: String,
+        required: true,
+        minlength: 1,
+        maxlength: 15
+    },
+    totalPrizes: {
+        type: String,
+        required: true,
+        minlength: 1,
+        maxlength: 15
+    },
+    prizePercentage: {
+        type: String,
+        required: true,
+        minlength: 1,
+        maxlength: 15
     }
+
 });
 
 const Ticket = mongoose.model('Ticket',ticketSchema);
@@ -84,7 +103,11 @@ function validateTicket(ticket) {
         redemptionDeadline: Joi.string().min(1).required(),
         overallOddsOfWinning: Joi.string().min(1).required(),
         gameImageLink: Joi.string().min(1).required(),
-        State: Joi.string().min(1).required()
+        State: Joi.string().min(1).required(),
+        remainingPrizes: Joi.string().min(1).required(),
+        totalPrizes: Joi.string().min(1).required(),
+        prizePercentage: Joi.string().min(1).required()
+
     };
     return result = Joi.validate(ticket, schema)
 }
