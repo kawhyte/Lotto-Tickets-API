@@ -23,7 +23,8 @@ router.get('/new', async (req, res, next) => {
 
 router.get('/best', async (req, res, next) => {
     //throw new Error('lotto GET error');
-        const ticket = await Ticket.find().sort(req.param.ticketNumber).limit(1);
+        const ticket = await Ticket.find().limit(5).sort(req.params.prizePercentage).select({});
+        console.log(ticket);
         res.send(ticket);
 })
 
