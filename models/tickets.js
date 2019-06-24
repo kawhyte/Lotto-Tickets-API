@@ -3,9 +3,8 @@ const Joi = require('joi');
 
 const ticketSchema = new mongoose.Schema({
     ticketNumber: {
-        type: String,
-        required: true,
-        minlength: 1
+        type: Number,
+        required: true
     },
     ticketName: {
         type: String,
@@ -14,10 +13,8 @@ const ticketSchema = new mongoose.Schema({
         maxlength: 50
     },
     topPrize: {
-        type: String,
-        required: true,
-        minlength: 1,
-        maxlength: 15
+        type: Number,
+        required: true
     },
     topPrizeRemaining: {
         type: String,
@@ -26,28 +23,20 @@ const ticketSchema = new mongoose.Schema({
         maxlength: 15
     },
     ticketCost: {
-        type: String,
-        required: true,
-        minlength: 1,
-        maxlength: 15
+        type: Number,
+        required: true
     },
     launchDate: {
-        type: String,
-        required: true,
-        minlength: 1,
-        maxlength: 15
+        type: Date,
+        required: true
     },
     endDate: {
-        type: String,
-        required: true,
-        minlength: 1,
-        maxlength: 15
+        type: Date,
+        required: true
     },
     redemptionDeadline: {
-        type: String,
-        required: true,
-        minlength: 1,
-        maxlength: 15
+        type: Date,
+        required: true
     },
     overallOddsOfWinning: {
         type: String,
@@ -64,26 +53,20 @@ const ticketSchema = new mongoose.Schema({
     State: {
         type: String,
         required: true,
-        minlength: 1,
-        maxlength: 15
+        minlength: 2,
+        maxlength: 2
     },
     remainingPrizes: {
-        type: String,
-        required: true,
-        minlength: 1,
-        maxlength: 15
+        type: Number,
+        required: true
     },
     totalPrizes: {
-        type: String,
-        required: true,
-        minlength: 1,
-        maxlength: 15
+        type: Number,
+        required: true
     },
     prizePercentage: {
-        type: String,
-        required: true,
-        minlength: 1,
-        maxlength: 15
+        type: Number,
+        required: true
     }
 
 });
