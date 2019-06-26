@@ -81,10 +81,10 @@
       }
     },
 
-    "/tickets/best": {
+    "/tickets/toptickets": {
       "get": {
         "tags": ["Tickets"],
-        "summary": "Returns the \"Ticket of the Day\". The best ticket the user can buy to win the grand prize.",
+        "summary": "Returns the \"Top 5 tickets of the Day\". The best tickets the user can buy to win the top prizes.",
         "responses": {
           "200": {
             "description": "OK",

@@ -1,4 +1,4 @@
-mongoimport --db lotto --collection tickets --drop --file lotto-data.json --jsonArray
+mongoimport --db lotto --collection tickets --drop --file seed_data/lotto-data.json --jsonArray
 
 export Lotto_jwtPrivateKey=
 

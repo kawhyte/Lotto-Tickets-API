@@ -1,9 +1,9 @@
 
 const express = require('express');
-const tickets = require('../routes/tickets');
-const home = require('../routes/home');
-const users  =  require('../routes/users');
-const auth = require('../routes/auth')
+const tickets = require('../controllers/tickets');
+const home = require('../controllers/home');
+const users  =  require('../controllers/users');
+const auth = require('../controllers/auth')
 const error = require('../middleware/error');
 var bodyParser = require('body-parser');
 
